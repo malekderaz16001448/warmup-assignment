@@ -393,11 +393,6 @@ function getTotalActiveHoursPerMonth(textFile, driverID, month) {
     let s = remaining % 60;
 
     let hStr = "" + h;
-    if (h < 10) {
-        hStr = "00" + h;
-    } else if (h < 100) {
-        hStr = "0" + h;
-    }
     if (m < 10) {
         m = "0" + m;
     }
@@ -488,11 +483,6 @@ function getRequiredHoursPerMonth(textFile, rateFile, bonusCount, driverID, mont
     let s = remaining % 60;
 
     let hStr = "" + h;
-    if (h < 10) {
-        hStr = "00" + h;
-    } else if (h < 100) {
-        hStr = "0" + h;
-    }
     if (m < 10) {
         m = "0" + m;
     }
